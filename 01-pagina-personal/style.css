@@ -1,7 +1,111 @@
+@font-face {
+  font-family: "RobotoCondensedBlack";
+  src: url("./Assets/Fonts/static/RobotoCondensed-Black.ttf");
+}
+
+@font-face {
+  font-family: "RobotoCondensedBold";
+  src: url("./Assets/Fonts/static/RobotoCondensed-Bold.ttf");
+}
+
+@font-face {
+  font-family: "RobotoCondensedLight";
+  src: url("./Assets/Fonts/static/RobotoCondensed-Light.ttf");
+}
+
 /* Estilos para 01 pagina personal */
-body {
-  font-family: sans-serif;
+body,
+html,
+*,
+*::after,
+*::before {
+  font-family: Arial, Helvetica, sans-serif;
   margin: 0;
-  padding: 20px;
+  padding: 0;
   background-color: #f4f4f4;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+body {
+  width: 1366px;
+  max-width: 75vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: space-between;
+  margin: 0 auto;
+}
+
+h1 {
+  font-family: "RobotoCondensedBlack";
+}
+
+h2 {
+  font-family: "RobotoCondensedBold";
+}
+
+h3,
+h4 {
+  font-family: "RobotoCondensedLight";
+}
+
+img {
+  max-width: 45%;
+  width: 35%;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 95%;
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: space-between;
+}
+
+h1,
+h2. h3. h4 {
+  max-width: 95%;
+  width: 85%;
+}
+/* 🎨 Paleta de colores suaves y profesionales */
+body {
+  background-color: #f0f2f5; /* gris muy claro */
+  color: #333; /* texto principal en gris oscuro */
+}
+
+h1 {
+  color: #2c3e50; /* azul oscuro */
+}
+
+h2 {
+  color: #34495e; /* otro tono elegante */
+}
+
+h3 {
+  color: #7f8c8d; /* gris suave */
+}
+
+h4 {
+  color: #95a5a6; /* gris claro */
+}
+
+button {
+  background-color: #3498db; /* azul brillante */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 15px;
+}
+
+button:hover {
+  background-color: #2980b9; /* azul más oscuro al pasar el mouse */
 }
